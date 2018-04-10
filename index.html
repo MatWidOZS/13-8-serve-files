@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Example</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+    <body>
+    	<style type="text/css">
+    		* {box-sizing: border-box;}
+
+			body {
+				margin: 0;
+				padding: 0;
+				background-color: #f1f1f1;
+				text-align: justify;
+			}
+
+			.container {
+				width: 100%;
+				max-width: 900px;
+				margin: 0 auto;
+				background-color: #fff;
+				border-radius: 10px;
+			}
+
+			.row::before,
+			.row::after {
+				content:"";
+				display: table ;
+				clear: both;
+			}
+			 
+			[class*="col-"] {
+				float: left;
+				min-height: 1px;
+				padding: 15px;
+			}
+
+			.col-1 {width: 8.33%;}
+			.col-2 {width: 16.66%;}
+			.col-3 {width: 25%;}
+			.col-4 {width: 33.33%;}
+			.col-5 {width: 41.66%;}
+			.col-6 {width: 50%;}
+			.col-7 {width: 58.33%;}
+			.col-8 {width: 66.66%;}
+			.col-9 {width: 75%;}
+			.col-10 {width: 83.33%;}
+			.col-11 {width: 91.66%;}
+			.col-12 {width: 100%;}
+
+			.col-offset-0 {margin-left: 0;}
+			.col-offset-1 {margin-left: 8.33%;}
+			.col-offset-2 {margin-left: 16.66%;}
+			.col-offset-3 {margin-left: 25%;}
+			.col-offset-4 {margin-left: 33.33%;}
+			.col-offset-5 {margin-left: 41.66%;}
+			.col-offset-6 {margin-left: 50%;}
+			.col-offset-7 {margin-left: 58.33%;}
+			.col-offset-8 {margin-left: 66.66%;}
+			.col-offset-9 {margin-left: 75%;}
+			.col-offset-10 {margin-left: 83.33%;}
+			.col-offset-11 {margin-left: 91.66%;}
+
+			footer, h1 {
+				text-align: center;
+				padding-top: 15px;
+			}
+    	</style>
+		<div class="container">
+			<h1>Lorem ipsum dolor sit amet</h1>
+			<div class="row">
+				<div class="col-4">
+					<p>Duis lacinia bibendum congue. Duis ac dapibus metus, ut sagittis diam. Aenean neque ex, dignissim auctor pharetra id, varius sit amet elit. Vestibulum consequat ex nec viverra lacinia. Phasellus eget semper erat, id scelerisque erat. Morbi mattis ante augue, ac mattis lorem sodales facilisis. Morbi sed ipsum sit amet erat blandit eleifend. Curabitur commodo dapibus turpis sit amet interdum. Donec libero odio, dapibus eget mauris sed, rhoncus ultricies lacus.</p>
+				</div>
+				<div class="col-8">
+					<p>Cras gravida aliquam cursus. Ut finibus, orci sed feugiat accumsan, tellus nisi laoreet urna, sit amet eleifend massa neque eget tortor. Sed aliquet quam ut metus luctus, ut hendrerit neque varius. Donec ornare elementum viverra. Integer in tellus tincidunt, sodales nisi ac, consectetur augue. Aliquam nec interdum purus. Vestibulum maximus ultrices nunc, id venenatis risus congue at. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus sed lacus et erat ullamcorper vehicula vel eu ante. Pellentesque eleifend turpis non augue fermentum, a pellentesque lacus tincidunt. Phasellus pulvinar enim ut egestas volutpat. Nulla vel malesuada mi. Maecenas malesuada felis sed porttitor volutpat.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-4">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis fermentum sem, eu pretium leo pulvinar scelerisque. Suspendisse tincidunt aliquet magna quis faucibus. Aliquam mollis lorem in ultricies molestie. Phasellus malesuada eu sapien eleifend vulputate. Nam hendrerit velit mollis ipsum tincidunt accumsan.</p>
+				</div>
+				<div class="col-5">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis fermentum sem, eu pretium leo pulvinar scelerisque. Suspendisse tincidunt aliquet magna quis faucibus. Aliquam mollis lorem in ultricies molestie. Phasellus malesuada eu sapien eleifend vulputate. Nam hendrerit velit mollis ipsum tincidunt accumsan. Nulla varius, mauris sollicitudin pellentesque venenatis, orci dolor pretium sem, vel sodales lorem nibh in lectus. Nunc pretium sapien ac fringilla pulvinar. In hac habitasse platea dictumst. Quisque id nunc malesuada, tempor nisi a, ultrices urna.</p>
+				</div>
+				<div class="col-3">
+						<p>Aenean gravida vestibulum lacus, et suscipit nisi commodo vitae. Ut maximus diam id eros aliquam ultricies. Aenean quis quam molestie, ultricies arcu tempus, consectetur ex. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+				</div> 
+			</div>
+			<div class="row">
+				<div class="col-offset-5 col-7">
+					<p>Fusce ullamcorper neque in odio rhoncus, non pellentesque velit pretium. Fusce urna ex, sodales vitae pretium et, rhoncus vitae augue. Donec malesuada, nisl quis convallis sagittis, urna nulla sollicitudin enim, vel pretium sem dolor eu arcu. Mauris egestas mauris at libero dapibus, ac tincidunt tellus ornare. Nullam mattis sagittis odio a commodo. Cras a lectus finibus, suscipit neque quis, laoreet quam. Nulla tortor ante, posuere nec odio pellentesque, vulputate volutpat tortor. Mauris dictum fermentum dapibus. Suspendisse fermentum, orci quis porttitor posuere, nisl ipsum egestas arcu, ac vehicula mauris urna ac tortor. Suspendisse a mauris neque. Maecenas ex orci, mollis eget sapien at, finibus laoreet metus. Nam pulvinar varius arcu, pharetra lobortis odio congue mollis. Praesent sodales, erat at convallis pharetra, sem felis fermentum lectus, sed mollis lorem ante quis leo. Cras ut consectetur turpis. In molestie venenatis justo nec ultricies.</p>
+				</div>
+			</div>
+			<footer class="col-12">
+				<p>Created by Mateusz</p>
+			</footer>
+		</div>
+    </body>
+</html>
