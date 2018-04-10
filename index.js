@@ -3,10 +3,10 @@ var fs = require('fs');
 
 var server = http.createServer();
 
-console.log('Internet browser --> http://localhost:9000 or http://localhost:9000/getsite');
+console.log('Internet browser --> http://localhost:3000');
 
 server.on('request', function(request, response) {
-	if (request.method === 'GET' && request.url === '/getsite') {
+	if (request.method === 'GET' && request.url === '/') {
 		response.setHeader('Content-Type', 'text/html; charset=utf-8');
 		fs.readFile('./index.html', 'utf-8', function(err, data) {
 			response.write(data);
@@ -19,4 +19,4 @@ server.on('request', function(request, response) {
 	}
 });
 
-server.listen(9000);
+server.listen(3000);
